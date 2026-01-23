@@ -1,0 +1,27 @@
+{
+    "name": "secretwebmaster/laravel-localization",
+    "description": "Fixed fork of mcamara/laravel-localization used by WNCMS",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "replace": {
+        "mcamara/laravel-localization": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mcamara\\LaravelLocalization\\": "src/Mcamara/LaravelLocalization/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mcamara\\LaravelLocalization\\LaravelLocalizationServiceProvider"
+            ],
+            "aliases": {
+                "LaravelLocalization": "Mcamara\\LaravelLocalization\\Facades\\LaravelLocalization"
+            }
+        }
+    }
+}
