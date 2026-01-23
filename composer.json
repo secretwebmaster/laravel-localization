@@ -1,21 +1,44 @@
 {
     "name": "secretwebmaster/laravel-localization",
-    "description": "Fixed fork of mcamara/laravel-localization used by WNCMS",
-    "type": "library",
+    "description": "Easy localization for Laravel (forked for WNCMS fixes)",
+    "keywords": [
+        "localization",
+        "laravel",
+        "php",
+        "wncms"
+    ],
+    "homepage": "https://github.com/secretwebmaster/laravel-localization",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "secretwebmaster",
+            "email": "earnbyshare2016@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "laravel/framework": "^10.0|^11.0|^12.0"
     },
-    "replace": {
-        "mcamara/laravel-localization": "*"
+    "require-dev": {
+        "orchestra/testbench": "^8.5|^9.0|^10.0",
+        "phpunit/phpunit": "^10.1|^11.0"
     },
     "suggest": {
         "ext-intl": "*"
     },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
     "autoload": {
+        "classmap": [],
+        "psr-0": {
+            "Mcamara\\LaravelLocalization": "src/"
+        }
+    },
+    "autoload-dev": {
         "psr-4": {
-            "Mcamara\\LaravelLocalization\\": "src/Mcamara/LaravelLocalization/"
+            "Mcamara\\LaravelLocalization\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -27,5 +50,7 @@
                 "LaravelLocalization": "Mcamara\\LaravelLocalization\\Facades\\LaravelLocalization"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
