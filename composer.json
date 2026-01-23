@@ -24,6 +24,9 @@
         "orchestra/testbench": "^8.5|^9.0|^10.0",
         "phpunit/phpunit": "^10.1|^11.0"
     },
+    "conflict": {
+        "mcamara/laravel-localization": "*"
+    },
     "suggest": {
         "ext-intl": "*"
     },
