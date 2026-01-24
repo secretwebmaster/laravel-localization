@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getSupportedLocales()
  * @method static array getLocalesOrder()
  * @method static string getCurrentLocaleName()
+ * @method static string setDefaultLocale()
  * @method static string getCurrentLocaleNative()
  * @method static string getCurrentLocaleDirection()
  * @method static string getCurrentLocaleScript()
