@@ -45,14 +45,7 @@
         }
     },
     "extra": {
-        "laravel": {
-            "providers": [
-                "Mcamara\\LaravelLocalization\\LaravelLocalizationServiceProvider"
-            ],
-            "aliases": {
-                "LaravelLocalization": "Mcamara\\LaravelLocalization\\Facades\\LaravelLocalization"
-            }
-        }
+        "laravel": {}
     },
     "minimum-stability": "dev",
     "prefer-stable": true
