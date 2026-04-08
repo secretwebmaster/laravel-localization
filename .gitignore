@@ -3,3 +3,4 @@ diff.txt
 .idea
 .vscode
 vendor
+.phpunit.cache
