@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {},
         "branch-alias": {
-            "dev-main": "2.4.x-dev"
+            "dev-main": "2.4.1.x-dev"
         }
     },
     "minimum-stability": "dev",
